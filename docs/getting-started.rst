@@ -23,7 +23,7 @@ Adding the Presto service
 
 This section and all others that follow within :ref:`Getting Started <getting_started>`
 walk you through the integration steps needed to get Presto working with
-Ambari. By default, this integration code installs Presto version ``0.161``,
+Ambari. By default, this integration code installs Presto version ``0.190``,
 the latest version at the time of writing. To install the latest Teradata
 Presto release (``0.148t`` at the time of writing), download the Ambari
 integration package from `here <http://www.teradata.com/presto>`_ and follow
@@ -47,9 +47,9 @@ To integrate the Presto service with Ambari, follow the steps outlined below:
 
   .. code-block:: bash
 
-    $ tar -xvf /path/to/integration/package/ambari-presto-1.2.tar.gz -C /var/lib/ambari-server/resources/stacks/HDP/2.5/services/PRESTO
-    $ mv /var/lib/ambari-server/resources/stacks/HDP/2.5/services/PRESTO/ambari-presto-1.2/* /var/lib/ambari-server/resources/stacks/HDP/2.5/services/PRESTO
-    $ rm -rf /var/lib/ambari-server/resources/stacks/HDP/2.5/services/PRESTO/ambari-presto-1.2
+    $ tar -xvf /path/to/integration/package/ambari-presto-1.3.tar.gz -C /var/lib/ambari-server/resources/stacks/HDP/2.5/services/PRESTO
+    $ mv /var/lib/ambari-server/resources/stacks/HDP/2.5/services/PRESTO/ambari-presto-1.3/* /var/lib/ambari-server/resources/stacks/HDP/2.5/services/PRESTO
+    $ rm -rf /var/lib/ambari-server/resources/stacks/HDP/2.5/services/PRESTO/ambari-presto-1.3
 
 * Finally, make all integration files executable and restart the Ambari server:
 
